@@ -4,6 +4,8 @@ import Footer from '@/components/Footer';
 import ClientLogos from '@/components/ClientLogos';
 import Solutions from '@/components/Solutions';
 import Reviews from '@/components/Reviews';
+import FAQ from '@/components/FAQ'; // New Import
+import ContactCTA from '@/components/ContactCTA'; // New Import
 
 export default function Home() {
   return (
@@ -12,11 +14,8 @@ export default function Home() {
       <ClientLogos />
       <Solutions />
       <Reviews />
-      
-      {/* Remaining sections will go here: FAQs and Contact Form */}
-      {/* <section id="faqs">...</section> */}
-      {/* <section id="contact">...</section> */}
-
+      <FAQ /> 
+      <ContactCTA />
       <Footer />
     </main>
   );
