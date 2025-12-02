@@ -1,24 +1,22 @@
 // app/page.tsx
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
+import ClientLogos from '@/components/ClientLogos';
+import Solutions from '@/components/Solutions';
+import Reviews from '@/components/Reviews';
 
 export default function Home() {
   return (
     <main>
-      {/* The Hero component from the previous step */}
       <Hero />
+      <ClientLogos />
+      <Solutions />
+      <Reviews />
       
-      {/* The rest of the homepage sections will go here, 
-        each wrapped in a section with a unique ID for Navbar scrolling:
-        
-        <section id="logos">...</section>
-        <section id="solutions">...</section>
-        <section id="reviews">...</section>
-        <section id="faqs">...</section>
-        <section id="contact">...</section>
-      */}
+      {/* Remaining sections will go here: FAQs and Contact Form */}
+      {/* <section id="faqs">...</section> */}
+      {/* <section id="contact">...</section> */}
 
-      {/* The dedicated Footer component */}
       <Footer />
     </main>
   );
